@@ -1,0 +1,40 @@
+Create database flipcart;
+use flipcart;
+
+create table Client_master (
+Client_id varchar(6) primary key CHECK (Client_id LIKE 'C%'),
+Name Varchar(20) not null,
+Address1 varchar(30),
+Address2 varchar(30),
+City varchar(15),
+Pincode int,
+State varchar(15),
+Bal_due decimal(10,2)
+);
+
+Create table Product_master (
+Product_id varchar(6) primary key check (Product_id Like '%P'),
+Description varchar(15) not null,
+Profit_percent decimal(4,2) not null,
+Unit_measure varchar(10) not null,
+Qty_no_hand int not null,
+Reorder_lvl int not null,
+Sell_price decimal(8,2) not null check(sell_price > 0),
+Cost_price decimal(8,2) not null check(Cost_price > 0)
+);
+
+create table Salesman_master (
+Salesman_id varchar(6) primary key check (salesman_id Like '%S'),
+Salesman_name varchar(20) not null,
+Address1 varchar(30),
+Address2 varchar(30),
+City varchar(15),
+Pincode int,
+State varchar(15),
+Sal_amt decimal(8,2) not null check(Sal_amt > 0),
+Tgt_to_get decimal(6,2) not null check(Tgt_to_get > 0),
+Ytd_sales decimal(6,2),
+Remarks varchar(60)
+);
+
+
