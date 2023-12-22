@@ -37,4 +37,5 @@ Ytd_sales decimal(6,2),
 Remarks varchar(60)
 );
 
+// NEw Table
 
