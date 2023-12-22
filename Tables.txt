@@ -37,5 +37,17 @@ Ytd_sales decimal(6,2),
 Remarks varchar(60)
 );
 
-// NEw Table
+create table sale_order (
+order_id varchar(6) primary key check(order_id Like '%O'),
+order_date date,
+Client_id varchar(6),
+Dely_Addr varchar(6),
+Salesman_id varchar(6),
+Dely_type char(1),
+Billed_yn char(1),
+Dely_Date date,
+Oder_Status varchar(10),
+foreign key (Client_id) references Client_master(Client_id),
+foreign key (Salesman_id) references Salesman_master(Salesman_id)
+);
 
