@@ -1,0 +1,1 @@
+insert into client_master (Client_id,Name,City,Pincode,State,Bal_due) values ('C00001', 'Ivan Bayross', 'Bombay', '400054', 'MahaRastra', 15000);
