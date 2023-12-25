@@ -1,1 +1,7 @@
-insert into client_master (Client_id,Name,City,Pincode,State,Bal_due) values ('C00001', 'Ivan Bayross', 'Bombay', '400054', 'MahaRastra', 15000);
+insert into client_master (Client_id,Name,City,Pincode,State,Bal_due) values 
+('C00001', 'Ivan Bayross', 'Bombay', '400054', 'MahaRastra', 15000),
+('C00002','Vandana Saitwal','Madras',780001,'Tamil Nadu',0),
+("C00003",'Pramada Jaguste','Bombay',400057,'Maharastra',5000),
+('C00004','Basu Navindgi','Bobbay',400056,'Maharastra',0),
+('C00005','Ravi Sreedharan','Delhi',100001,'Delhi',2000),
+('C00006','Rukmini','Bombay',400050,'Maharastra',0);
