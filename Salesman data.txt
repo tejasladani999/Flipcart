@@ -1,0 +1,6 @@
+insert into Salesman_master 
+(Salesman_id,Salesman_name,Address1,Address2,City,Pincode,State,Sal_amt,Tgt_to_get,Ytd_sales,Remarks) values
+('S00001','Kiran','A/14','Worli','Bombay',400002,'MAharstra',3000,100,50,'Good'),
+('S00002','Manish','65','Narimam','Bombay',400001,'MAharstra',3000,200,100,'Good'),
+('S00003','Ravi','P-7','Bandra','Bombay',400032,'MAharstra',3000,200,100,'Good'),
+('S00004','Aashish','A/5','juhu','Bombay',400044,'MAharstra',3000,200,150,'Good');
