@@ -1,0 +1,8 @@
+insert into sale_order 
+(order_id,order_date,Client_id,Dely_type,Billed_yn,Salesman_id,Dely_Date,Oder_Status) values 
+('O19001','1996-01-12','C00001','F','N','S00001','1996-01-20','In Process'),
+('O19002','1996-01-25','C00002','P','N','S00002','1996-01-27','Cancelled'),
+('O46865','1996-02-18','C00003','F','Y','S00003','1996-02-20','Fullfilled'),
+('O19003','1996-04-03','C00001','F','Y','S00001','1996-04-07','Fullfilled'),
+('O46866','1996-05-20','C00004','P','N','S00002','1996-05-22','Cancelled'),
+('O19008','1996-05-24','C00005','F','N','S00004','1996-05-26','In Process');
