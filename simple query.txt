@@ -1,0 +1,8 @@
+#Exercises Computation on table data:
+
+-- find the name of all clients having 'a' as the second letter in their names
+select name from client_master where name like '_a%';
+
+-- find out the clients who stay in a city whose second letter is 'a'.
+select name from client_master where city like '_a%';
+
