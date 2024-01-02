@@ -6,3 +6,8 @@ select name from client_master where name like '_a%';
 -- find out the clients who stay in a city whose second letter is 'a'.
 select name from client_master where city like '_a%';
 
+-- find the list of all client who stay in Bombay or Delhi.
+select * from client_master  where city = 'Bombay' or city = 'Delhi';
+
+-- list out client who's bal_due is gretter then value 10000.
+select * from client_master where bal_due > 10000;
