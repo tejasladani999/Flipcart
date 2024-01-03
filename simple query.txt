@@ -11,3 +11,6 @@ select * from client_master  where city = 'Bombay' or city = 'Delhi';
 
 -- list out client who's bal_due is gretter then value 10000.
 select * from client_master where bal_due > 10000;
+
+-- list out sales order table for placed in month of january.
+select * from sale_order WHERE MONTH(order_date) = 1;
