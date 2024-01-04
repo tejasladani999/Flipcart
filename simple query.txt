@@ -14,3 +14,6 @@ select * from client_master where bal_due > 10000;
 
 -- list out sales order table for placed in month of january.
 select * from sale_order WHERE MONTH(order_date) = 1;
+
+-- Display the order information for client_id C00001 and C00002.
+Select * from sale_order where Client_id = 'C00001' or Client_id = 'C00002';
