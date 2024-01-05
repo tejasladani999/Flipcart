@@ -20,3 +20,6 @@ Select * from sale_order where Client_id = 'C00001' or Client_id = 'C00002';
 
 -- find Products Whose Selling price is Gretter than 2000 and less than or equal to 5000.
 select * from Product_master where Sell_price > 2000 and Sell_price <= 5000;
+
+-- List Name, city and state of clients who are not in the state of Maharastra.
+Select Name,City,State from Client_master where State != 'Maharastra';
