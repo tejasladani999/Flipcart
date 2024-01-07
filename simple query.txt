@@ -21,5 +21,11 @@ Select * from sale_order where Client_id = 'C00001' or Client_id = 'C00002';
 -- find Products Whose Selling price is Gretter than 2000 and less than or equal to 5000.
 select * from Product_master where Sell_price > 2000 and Sell_price <= 5000;
 
+-- find products whose selling price is more than 1500. Calculate a new selling price as, original selling price *.15 Rename the new column in the above query as new_price.
+SELECT product_id,Description,Sell_price,Sell_price* 0.15 AS new_price FROM Product_master WHERE Sell_price > 1500;
+
 -- List Name, city and state of clients who are not in the state of Maharastra.
 Select Name,City,State from Client_master where State != 'Maharastra';
+
+-- Count the total number of order
+select distinct count(order_id) as TotalOrder from sale_order;
