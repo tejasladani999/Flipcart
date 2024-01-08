@@ -29,3 +29,9 @@ Select Name,City,State from Client_master where State != 'Maharastra';
 
 -- Count the total number of order
 select distinct count(order_id) as TotalOrder from sale_order;
+
+-- calculate the average price of all the product.
+select avg(sell_price) as AveragePrice from Product_master;
+
+-- Determine Minimum and MAximum Price of product.
+select max(sell_price) as MaximumPrice,min(sell_price) as MinimumPrice from Product_master;
