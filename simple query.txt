@@ -35,3 +35,9 @@ select avg(sell_price) as AveragePrice from Product_master;
 
 -- Determine Minimum and MAximum Price of product.
 select max(sell_price) as MaximumPrice,min(sell_price) as MinimumPrice from Product_master;
+
+-- count product having price greter than 1500.
+select Count(Product_id) as ProductPrice from Product_master where sell_price >=1500;
+
+-- Find the product whose qty_on_hand is less than Record_lvl.
+Select Description as ProductName from product_master where Qty_no_hand < Reorder_lvl;
