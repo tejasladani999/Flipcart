@@ -1,0 +1,4 @@
+##Exercise on using Having and Group By Clauses:
+
+-- Print the description and total qty sold for each product.
+SELECT product_id,description FROM product_master GROUP BY product_id, description;
